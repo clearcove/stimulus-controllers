@@ -27,8 +27,8 @@ First, you'll want to initialize StimulusJS and then you can import all the Clea
 
 ```javascript
 // Start StimulusJS
-import { Application } from "stimulus"
-import { definitionsFromContext } from "stimulus/webpack-helpers"
+import { Application } from "stimulus";
+import { definitionsFromContext } from "stimulus/webpack-helpers";
 
 const application = Application.start();
 const context = require.context("controllers", true, /.js$/);
@@ -37,6 +37,7 @@ application.load(definitionsFromContext(context));
 
 // Import and register all ClearCove Stimulus controllers:
 import { registerAllControllers } from '@clearcove/stimulus-controllers';
+registerAllControllers(application);
 
 // OR only import and register the ones you want:
 import { BootstrapPopoverController } from '@clearcove/stimulus-controllers';
@@ -87,3 +88,12 @@ This library is modeled after [excid3/tailwindcss-stimulus-components](https://g
 ## License
 
 This package is available as open source under the terms of the MIT License.
+
+## Development
+
+### Publish a new version
+
+* Make changes to code.
+* Build new bundle via `yarn run build`.
+* Commit and push all changes.
+* Publish package via `yarn publish --access public`.
