@@ -2,6 +2,7 @@
 //
 
 /* eslint class-methods-use-this: "off" */
+import $ from 'jquery';
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
