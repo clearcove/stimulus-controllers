@@ -94,6 +94,9 @@ This package is available as open source under the terms of the MIT License.
 ### Publish a new version
 
 * Make changes to code.
-* Build new bundle via `yarn run build`.
-* Commit and push all changes.
-* Publish package via `yarn publish --access public`.
+* `yarn build`
+* Bump version in package.json
+* Commit and push changes
+* [Creating and publishing an Org scoped package](https://docs.npmjs.com/creating-and-publishing-an-org-scoped-package)
+    `yarn publish --access public`
+  This will ask for version, just confirm the new version
