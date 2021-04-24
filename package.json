@@ -1,6 +1,6 @@
 {
   "name": "@clearcove/stimulus-controllers",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "A collection of StimulusJS controllers we use in our projects.",
   "repository": {
     "url": "https://github.com/clearcove/stimulus-controllers",
@@ -13,20 +13,17 @@
     "stimulus",
     "stimulusjs"
   ],
-
   "scripts": {
     "build": "microbundle --format es",
     "prepublish": "yarn build"
   },
-
   "source": "src/index.js",
   "module": "dist/stimulus-controllers.esm.js",
-
   "peerDependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "select2": "^4.0.11",
-    "stimulus": ">=1.1.1"
+    "stimulus": ">=2.0.3"
   },
   "devDependencies": {
     "microbundle": "^0.12.3"
